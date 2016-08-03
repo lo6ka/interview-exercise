@@ -1,0 +1,27 @@
+{
+  "name": "interview-exercise",
+  "version": "1.0.0",
+  "description": "Interview Exercise",
+  "main": "index.js",
+  "scripts": {
+    "start": "static",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lo6ka/interview-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lo6ka/interview-exercise/issues"
+  },
+  "homepage": "https://github.com/lo6ka/interview-exercise#readme",
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.8"
+  }
+}

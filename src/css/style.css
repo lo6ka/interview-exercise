@@ -1,0 +1,43 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.triangle {
+  color: #eee;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.triangle__row {
+  padding: 5px;
+}
+
+.triangle__row:nth-child(4n+1) {
+  background: red;
+}
+
+.triangle__row:nth-child(4n+2) {
+  background: blue;
+}
+
+.triangle__row:nth-child(4n+3) {
+  background: orange;
+}
+
+.triangle__row:nth-child(4n+4) {
+  background: green;
+}
+
+.triangle__number {
+  margin: 0 10px;
+  display: inline-block;
+}

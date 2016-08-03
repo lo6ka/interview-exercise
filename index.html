@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+<head>
+  <meta charset="UTF-8">
+  <title>Interview Exercise</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div ng-controller="triangleController">
+    <label for="rowsCount">Rows in Pascal's Triangle</label>
+    <input id="rowsCount" name="rowsCount" type="number" ng-pattern="onlyNumbers" ng-model="rowsCount" ng-change=getPascalsTriangle(rowsCount)>
+    <ul class="triangle">
+      <li class="triangle__row" ng-repeat="row in triangle">
+        <span class="triangle__number" ng-repeat="number in row track by $index">{{ number }}</span>
+      </li>
+    </ul>
+  </div>
+  <script src="/node_modules/angular/angular.min.js"></script>
+  <script src="/src/js/app.js"></script>
+</body>
+</html>
